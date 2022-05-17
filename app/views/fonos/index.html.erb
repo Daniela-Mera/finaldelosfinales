@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fonos</h1>
+
+<div id="fonos">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Usuario</th>
+        <th scope="col">Fono</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @fonos.each do |fono| %>
+        <tr>
+          <td><%= fono.user_id %></td>
+          <td><%= fono.numero %></td>
+          <td><%= link_to "Show this fono", fono %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<%= link_to "New fono", new_fono_path %>

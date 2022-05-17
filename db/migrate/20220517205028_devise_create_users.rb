@@ -36,7 +36,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string:name
       t.string:ap_materno
       t.string:ap_paterno
-      t.integer:telefono
       t.string:direccion
       t.integer:dir_nro
       t.string:dir_dpto
